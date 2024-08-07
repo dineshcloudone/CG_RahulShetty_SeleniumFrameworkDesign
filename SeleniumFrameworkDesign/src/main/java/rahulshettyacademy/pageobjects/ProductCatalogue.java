@@ -20,7 +20,6 @@ public class ProductCatalogue extends AbstractComponent {
 		super(driver);
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
-
 	}
 
 	@FindBy(css = ".mb-3")
@@ -43,8 +42,7 @@ public class ProductCatalogue extends AbstractComponent {
 		WebElement prod =	getProductList().stream().filter(product->
 		product.findElement(By.cssSelector("b")).getText().equals(productName)).findFirst().orElse(null);
 		return prod;
-	}
-	
+	}	
 	
 	public void addProductToCart(String productName) throws InterruptedException
 	{
@@ -52,13 +50,5 @@ public class ProductCatalogue extends AbstractComponent {
 		prod.findElement(addToCart).click();
 		waitForElementToAppear(toastMessage);
 		waitForElementToDisappear(spinner);
-
-
 	}
-	
-	
-	
-	
-	
-
 }

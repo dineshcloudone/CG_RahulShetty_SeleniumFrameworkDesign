@@ -61,6 +61,8 @@ public class AbstractComponent {
 	public void waitForElementToDisappear(WebElement ele) throws InterruptedException
 	{
 		Thread.sleep(1000);
+		
+		//intentionally commented below lines to skip additional spinner wait
 //		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
 //		wait.until(ExpectedConditions.invisibilityOf(ele));
 

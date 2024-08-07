@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
 <title>TestNG Report</title>
@@ -7,19 +7,64 @@
 </head>
 <body>
 <table>
-<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">Error Validations Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">32,321</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Submit Order Test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">57,628</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">5</th><th class="num">0</th><th class="num">0</th><th class="num">89,949</th><th colspan="2"></th></tr>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Submit Order Test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">2</td><td class="num">26,066</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Error Validations Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">rahulshettyacademy.tests.ErrorValidationsTest</td><td><a href="#m0">LoginErrorValidation</a></td><td rowspan="1">1660248165701</td><td rowspan="1">2380</td></tr><tr class="passedeven"><td><a href="#m1">ProductErrorValidation</a></td><td rowspan="1">1660248175139</td><td rowspan="1">10041</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">Submit Order Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">rahulshettyacademy.tests.SubmitOrderTest</td><td><a href="#m2">OrderHistoryTest</a></td><td rowspan="1">1660248205385</td><td rowspan="1">5163</td></tr><tr class="passedeven"><td><a href="#m3">submitOrder</a></td><td rowspan="2">1660248185857</td><td rowspan="2">11143</td></tr><tr class="passedeven"><td><a href="#m4">submitOrder</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Submit Order Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">rahulshettyacademy.tests.SubmitOrderTest</td><td><a href="#m0">submitOrder</a></td><td rowspan="2">1723045803928</td><td rowspan="2">3810</td></tr><tr class="failedeven"><td><a href="#m1">submitOrder</a></td></tr><tr><th colspan="4">Submit Order Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">rahulshettyacademy.tests.SubmitOrderTest</td><td><a href="#m2">OrderHistoryTest</a></td><td rowspan="1">1723045824433</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Error Validations Test</h2><h3 id="m0">rahulshettyacademy.tests.ErrorValidationsTest#LoginErrorValidation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">rahulshettyacademy.tests.ErrorValidationsTest#ProductErrorValidation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Submit Order Test</h2><h3 id="m2">rahulshettyacademy.tests.SubmitOrderTest#OrderHistoryTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">rahulshettyacademy.tests.SubmitOrderTest#submitOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=Iamking@000, product=ADIDAS ORIGINAL, email=shetty@gmail.com}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">rahulshettyacademy.tests.SubmitOrderTest#submitOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=Iamking@000, product=ZARA COAT 3, email=anshika@gmail.com}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Submit Order Test</h2><h3 id="m0">rahulshettyacademy.tests.SubmitOrderTest#submitOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=Iamking@000, product=ZARA COAT 3, email=anshika@gmail.com}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1039, 574)
+  (Session info: chrome=127.0.6533.89)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [06a75a26daa311f8df6b507acac96c9b, clickElement {id=f.88A5C3DB70B806763A8968BA0C2870FA.d.257B3166482738CB9E0DF0D04F2CA93D.e.105}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.89, chrome: {chromedriverVersion: 127.0.6533.99 (f31af5097d90..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58067}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58067/devtoo..., se:cdpVersion: 127.0.6533.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (06a75a26daa311f8df6b507acac96c9b)] -&gt; css selector: .totalRow button]
+Session ID: 06a75a26daa311f8df6b507acac96c9b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+	at rahulshettyacademy.pageobjects.CartPage.goToCheckout(CartPage.java:36)
+	at rahulshettyacademy.tests.SubmitOrderTest.submitOrder(SubmitOrderTest.java:49)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">rahulshettyacademy.tests.SubmitOrderTest#submitOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=Iamking@000, product=ADIDAS ORIGINAL, email=shetty@gmail.com}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: .ta-results (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.89, chrome: {chromedriverVersion: 127.0.6533.99 (f31af5097d90..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58124}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58124/devtoo..., se:cdpVersion: 127.0.6533.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bc7900b9d02b29402367413baf70b896
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at rahulshettyacademy.AbstractComponents.AbstractComponent.waitForElementToAppear(AbstractComponent.java:37)
+	at rahulshettyacademy.pageobjects.CheckoutPage.selectCountry(CheckoutPage.java:38)
+	at rahulshettyacademy.tests.SubmitOrderTest.submitOrder(SubmitOrderTest.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">rahulshettyacademy.tests.SubmitOrderTest#OrderHistoryTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method rahulshettyacademy.tests.SubmitOrderTest.OrderHistoryTest() on instance rahulshettyacademy.tests.SubmitOrderTest@730d2164 depends on not successfully finished methods 
+[rahulshettyacademy.tests.SubmitOrderTest.submitOrder() on instance rahulshettyacademy.tests.SubmitOrderTest@730d2164]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 8 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
