@@ -22,8 +22,7 @@ public class OrderPage extends AbstractComponent {
 	public OrderPage(WebDriver driver) {
 		super(driver);
 		this.driver = driver;
-		PageFactory.initElements(driver, this);
-
+		PageFactory.initElements(driver, this);	
 	}
 
 	public Boolean VerifyOrderDisplay(String productName) {

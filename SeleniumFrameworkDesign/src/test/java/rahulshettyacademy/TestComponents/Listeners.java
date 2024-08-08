@@ -27,8 +27,7 @@ public class Listeners extends BaseTest implements ITestListener{
 	@Override
 	public void onTestSuccess(ITestResult result) {
 		// TODO Auto-generated method stub
-		extentTest.get().log(Status.PASS, "Test Passed");
-		
+		extentTest.get().log(Status.PASS, "Test Passed");		
 	}
 
 	@Override

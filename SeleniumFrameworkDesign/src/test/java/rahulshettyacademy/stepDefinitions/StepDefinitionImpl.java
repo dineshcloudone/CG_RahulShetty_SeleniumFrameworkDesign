@@ -21,6 +21,7 @@ public class StepDefinitionImpl extends BaseTest{
 	public LandingPage landingPage;
 	public ProductCatalogue productCatalogue;
 	public ConfirmationPage confirmationPage;
+	
 	@Given("I landed on Ecommerce Page")
 	public void I_landed_on_Ecommerce_Page() throws IOException
 	{
@@ -43,7 +44,7 @@ public class StepDefinitionImpl extends BaseTest{
 	}
 	
 	@When("^Checkout (.+) and submit the order$")
-	public void checkout_submit_order(String productName)
+	public void checkout_submit_order(String productName) throws Exception
 	{
 		CartPage cartPage = productCatalogue.goToCartPage();
 

@@ -35,9 +35,9 @@ import rahulshettyacademy.pageobjects.ProductCatalogue;
 public class SubmitOrderTest extends BaseTest {
 
 	String productName = "ZARA COAT 3";
-
+	
 	@Test(dataProvider = "getData", groups = { "Purchase" })
-	public void submitOrder(HashMap<String, String> input) throws IOException, InterruptedException {
+	public void submitOrder(HashMap<String, String> input) throws IOException, InterruptedException, Exception {
 
 		ProductCatalogue productCatalogue = landingPage.loginApplication(input.get("email"), input.get("password"));
 		List<WebElement> products = productCatalogue.getProductList();
